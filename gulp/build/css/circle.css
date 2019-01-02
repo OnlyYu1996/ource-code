@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.future_piece .div_touch {
+  overflow: hidden;
+  position: absolute;
+  top: 2px;
+  left: 10px;
+}
+/*蒙层span*/
+.span_active {
+  border-radius: 10000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  pointer-events: none;
+}
+/*内容容器标签*/
+.a_container {
+  display: inline-block;
+  width: 400px;/*为了占满整个div，触发hover*/
+  background-color: rgba(12, 10, 1, 0.4);
+  color: white;
+  border-radius: 3px;
+  line-height: 30px;
+  text-decoration: none;
+  z-index: 100000;
+}
+.a_container .span_content {
+  position: relative;
+  z-index: 10000;
+}
+/*span进场class*/
+.span_in {
+  animation: span_in 0.5s forwards;
+}
+/*sapn退场class*/
+.span_out {
+  animation: span_out 0.5s forwards;
+}
+/*span进场动画*/
+@keyframes span_in {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(42, 53, 80, 0.2);
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(20, 180, 87, 0.8);
+  }
+}
+/*span退场动画*/
+@keyframes span_out {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(20, 180, 87, 0.8);
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(129, 80, 108, 0.6);
+  }
+}

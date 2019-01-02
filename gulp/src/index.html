@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的主页</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://cdn.bootcss.com/jquery/1.2.3/jquery.js"></script>
+    <script src="./js/rotate.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="container">
+        <div class="content">
+            <!--中心核心圆圈-->
+            <div class="core"></div>
+            <!--中心第一不变外红全圈-->
+            <div class="outer_one">
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+                <div class="outer_one_block"></div>
+            </div>
+            <!--中心第二渐进外红全圈-->
+            <div class="outer_two">
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+                <div class="outer_two_block"></div>
+            </div>
+            <!--中心第三渐进外蓝半圈-->
+            <div class="outer_three">
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+                <div class="outer_three_block"></div>
+            </div>
+            <!--中心第四渐进红半圈-->
+            <div class="outer_four">
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+                <div class="outer_four_block"></div>
+            </div>
+            <!--中心第五渐进内红半圈-->
+            <div class="outer_five">
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+                <div class="outer_five_block"></div>
+            </div>
+            <!--外围块-->
+            <div class="blocks">
+                    <div class="future_block blank"><span>待定</span></div>
+                    <div class="future_block blank"><span>待定</span></div>
+                    <div class="future_block blank"><span>待定</span></div>
+                    <div class="future_block blank"><span>待定</span></div>
+                    <div class="future_block blank"><span>待定</span></div>
+                <!--外围实体内容块-->
+                <div class="future_block" ondragstart="return false">
+                    <!--内容-->
+                    <span><a target="_blank" href="#">第一块121</a></span>
+                    <!--渐近线-->
+                    <div class="line"></div>
+                    <!--提示内容-->
+                    <div class="tip">
+                        小简介
+                    </div>
+                </div>
+                <div class="future_block" ondragstart="return false">
+                    <span><a target="_blank" href="https://blog.csdn.net/YUHUI01">我的博客笔记</a></span>
+                    <div class="line"></div>
+                    <div class="tip">
+                        CSDN博客
+                    </div>
+                </div>
+                <div class="future_block" ondragstart="return false">
+                    <span><a target="_blank" href="#">第二块</a></span>
+                    <div class="line"></div>
+                    <div class="tip">
+                        小简介
+                    </div>
+                </div>
+                <!--填充空白快-->
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+                <div class="future_block blank"><span>待定</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
